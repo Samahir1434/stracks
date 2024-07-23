@@ -2,7 +2,7 @@
 int stack[100],choice,n,top,x,i;
 void push(void);
 void pop(void);
-void display(void);
+void peak(void);
 int main()
 {
     top=-1;
@@ -10,7 +10,7 @@ int main()
     scanf("%d",&n);
     printf("\n\t STACK OPERATIONS USING ARRAY");
     printf("\n\t--------------------------------");
-    printf("\n\t 1.PUSH\n\t 2.POP\n\t 3.DISPLAY\n\t 4.EXIT");
+    printf("\n\t 1.PUSH\n\t 2.POP\n\t 3.PEAK\n\t 4.EXIT");
     do
     {
         printf("\n Enter the Choice:");
@@ -29,7 +29,7 @@ int main()
             }
             case 3:
             {
-                display();
+                peak();
                 break;
             }
             case 4:
@@ -74,7 +74,7 @@ void pop()
         top--;
     }
 }
-void display()
+void peak()
 {
     if(top>=0)
     {
