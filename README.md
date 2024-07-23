@@ -1,1 +1,1 @@
-# stracks
+# stacks
